@@ -1,26 +1,30 @@
-/*
+@font-face {
+    font-family: 'TipografiaTextos';
+    src: url(/fonts/AtkinsonHyperlegible-Regular.ttf) format('truetype');
+  }
 
-TemplateMo 554 Ocean Vibes
+  @font-face {
+      font-family: 'TipografiaTitulos';
+      src: url(/fonts/NortHeadline-Cond.ttf) format('truetype');
+    }
 
-https://templatemo.com/tm-554-ocean-vibes
-
-*/
-
-html { overflow-x: hidden; }
+:root{
+    --blue-color: #0C00C0;
+    --yellow-color: #FFE667;
+    --pink-color: #FF98DD;
+    --green-color: #A8DE73;
+}
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'TipografiaTextos', sans-serif;
     font-size: 19px;
     line-height: 1.8em;
     overflow-x: hidden;
+    background-color: var(--yellow-color);
+    background-image: url(/img/descarga.png);
+    background-size: cover;
+    
 }
-
-p, span, em, a, address { color: #848586; }
-h2, p {
-    margin-top: 0;
-}
-
-a:hover, a.active { color: #309AFD; }
 
 .tm-btn {
     padding: 10px 40px;
@@ -86,11 +90,13 @@ a {
 }
 
 #tm-video-container {
+    padding-top: 50px;
     max-height: 400px;
     overflow: hidden;
-    background-color: #333;
-    margin-bottom: 90px;
+    margin-bottom: 40px;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 #tm-video {
@@ -108,7 +114,10 @@ a {
 
 .tm-nav-item {
     list-style: none;
-    margin: 22px;   
+    margin: 22px;  
+    background-color: var(--blue-color); 
+    font-family: 'TipografiaTitulos';
+    font-size: 25px;
 }
 
 .tm-nav-link {
@@ -118,19 +127,20 @@ a {
     width: 200px;
     height: 200px;
     padding: 30px;
-    border: 1px solid #D2D3D4;
-    color: #999; 
+    border: 3px solid var(--green-color);
+    box-shadow: 10px 10px 10px var(--blue-color);
+    color: white; 
     box-sizing: border-box;
 }
 
 .tm-nav-link:hover,
 .tm-nav-link.active {
-    color: #309AFD;
+    color: var(--green-color);
 }
 
 .tm-nav-link i {
     margin-top: 30px;
-    color: #309AFD;
+    color: var(--yellow-color);
 }
 
 .tm-main-nav ul {
@@ -148,10 +158,16 @@ a {
 }
 
 .tm-footer {
-    display: flex;
-    justify-content: space-between;
     padding: 25px;
-    font-size: 0.9em;
+    font-size: 2em;
+    background-color: var(--blue-color);
+    font-family: 'TipografiaTitulos';
+    color: #fff;
+}
+
+.tm-footer-div {
+    display: flex;
+    justify-content: center;
 }
 
 .tm-close-popup {
@@ -506,6 +522,16 @@ address {
     font-style: normal;
 }
 
+.navbar-mainbg {
+    top:0;
+    left:0;
+    width: 100%;
+    z-index: 1100;
+    position: fixed;
+    background-color: #0C00C0;
+    padding: 0px;
+}
+
 @media (max-width: 850px) {
     .tm-contact-row {
         flex-direction: column;
@@ -661,3 +687,31 @@ address {
         margin-left: 30px;
     }
 }
+
+header {
+    background: var(--blue-color);
+    padding: 0.75rem 0 0.75rem 1rem;
+    text-align: left;
+    color: var(--anti-flash-white);
+  }
+
+.img-nav {
+    height: 50px;
+    width: 200px;
+}
+
+.navbar-logo {
+    color: #fff;
+    font-family: 'TipografiaTitulos';
+    font-size: 35px;
+    padding-left: 5px;
+}
+
+.text-sec {
+    color: var(--blue-color);
+    font-family: 'TipografiaTitulos';
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+}
+

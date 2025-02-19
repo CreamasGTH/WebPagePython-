@@ -1,8 +1,3 @@
-/**
- * Credits
- * Isotope with paging: https://codepen.io/TimRizzo/details/ervrRq
- * CSS3 animation effects for Magnific Popup: https://codepen.io/dimsemenov/pen/GAIkt
- */
 
 $(document).ready(function () {
 
@@ -270,3 +265,5 @@ $(document).ready(function () {
         $('.tm-intro-img').attr('src', img);
     }
 });
+
+    
